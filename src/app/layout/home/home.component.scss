@@ -1,0 +1,55 @@
+.home-card {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 300px;
+  width: 300px;
+  margin: 3rem auto;
+  border-radius: 15px;
+  border: 1px solid hsl(0, 0%, 95%);
+  padding: 3rem;
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.home-card:hover {
+  cursor: pointer;
+  background-size: 245px;
+}
+.cardLabel {
+  margin-bottom: -45px;
+  font-size: 30px;
+  color: hsl(180, 60%, 50%);
+}
+.card1 {
+  background-image: url("../../../assets/images/recipe-book.png");
+}
+
+.card1:hover {
+  background-image: url("../../../assets/images/recipe-book-gif.gif");
+}
+
+.card2 {
+  background-image: url("../../../assets/images/salad.png");
+}
+
+.card2:hover {
+  background-image: url("../../../assets/images/salad-gif.gif");
+}
+
+.card3 {
+  background-image: url("../../../assets/images/notebook.png");
+}
+
+.card3:hover {
+  background-image: url("../../../assets/images/notebook-gif.gif");
+}
+
+.card4 {
+  background-image: url("../../../assets/images/social-media.png");
+}
+
+.card4:hover {
+  background-image: url("../../../assets/images/social-media-gif.gif");
+}
