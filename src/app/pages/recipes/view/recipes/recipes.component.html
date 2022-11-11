@@ -1,1 +1,5 @@
-<app-recipes-list *ngIf="recipes" [recipes]="recipes"></app-recipes-list>
+<ng-container *ngIf="recipes as entry">
+  <p class="alert alert-danger my-2" *ngIf="message">{{ message }}</p>
+
+  <app-recipes-list [recipes]="entry"></app-recipes-list>
+</ng-container>
