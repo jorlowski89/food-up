@@ -7,7 +7,7 @@ import { IRecipes } from 'src/app/model/recipes.model';
   providedIn: 'root',
 })
 export class RecipesService {
-  url = '/assets/data/data.json';
+  url = 'http://localhost:3000/recipes';
   constructor(private http: HttpClient) {}
 
   getRecipes(): Observable<HttpResponse<IRecipes[]>> {

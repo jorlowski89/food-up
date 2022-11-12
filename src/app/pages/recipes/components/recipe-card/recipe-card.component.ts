@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IIngredients } from 'src/app/model/ingredients.model';
 import { IRecipes } from 'src/app/model/recipes.model';
 
 @Component({
@@ -22,7 +23,11 @@ export class RecipeCardComponent implements OnInit {
     } else return '';
   }
 
-  getPrice(): number {
-    return Number(Math.random()) * 10;
+  getPrice(entry?: IIngredients[]): number {
+    let result = 0;
+    entry?.map((val) => {
+      result += val.price;
+    });
+    return result;
   }
 }

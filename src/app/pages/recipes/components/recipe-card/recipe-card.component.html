@@ -19,7 +19,7 @@
       >
       <span class="col-xl-3 col-6 px-2">
         <i class="bi bi-currency-dollar icon"></i>
-        {{ getPrice() | number: "1.0-2" }}</span
+        {{ getPrice(recipe.ingredientList) | number: "1.0-2" }}</span
       >
       <span class="col-xl-3 col-6 px-2">
         <button

@@ -1,9 +1,11 @@
+import { IIngredients } from './ingredients.model';
+
 export interface IRecipes {
   id?: number;
   name?: string;
   description?: string;
   difficult?: number;
   time?: number;
-  ingredients?: any;
+  ingredientList?: IIngredients[];
   image?: string;
 }
