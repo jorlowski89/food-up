@@ -15,4 +15,10 @@ export class RecipesService {
       observe: 'response',
     });
   }
+
+  getRecipeDetail(id?: string | null): Observable<HttpResponse<IRecipes>> {
+    return this.http.get<IRecipes>(`${this.url}/${id}`, {
+      observe: 'response',
+    });
+  }
 }

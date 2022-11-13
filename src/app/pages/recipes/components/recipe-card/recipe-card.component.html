@@ -1,4 +1,8 @@
-<div class="card m-3" *ngIf="recipe">
+<div
+  class="card m-3 customCard"
+  *ngIf="recipe"
+  [routerLink]="['details', recipe.id]"
+>
   <img [src]="recipe.image" class="card-img-top customImg" />
   <div class="card-body p-2">
     <h6 class="card-title text-nowrap" style="overflow: hidden">
@@ -36,3 +40,7 @@
     </div>
   </div>
 </div>
+
+<i class="bi bi-fire icon" style="color: red"></i>
+<i class="bi bi-flower1 icon" style="color: green"></i>
+<i class="bi bi-record-fill icon" style="color: green"></i>
