@@ -30,4 +30,22 @@ export class RecipeCardComponent implements OnInit {
     });
     return result;
   }
+
+  isSpicey(entry?: IIngredients[]): boolean {
+    if (!entry || !entry.length) return false;
+    return entry
+      .map((val) => {
+        return val.spicey === true;
+      })
+      .includes(true);
+  }
+
+  isVegan(entry?: IIngredients[]): boolean {
+    if (!entry || !entry.length) return false;
+    return entry
+      .map((val) => {
+        return val.vegan === true;
+      })
+      .every(Boolean);
+  }
 }

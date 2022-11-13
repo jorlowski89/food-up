@@ -1,20 +1,98 @@
 {
   "ingredients": [
-    { "id": 1, "name": "Beef", "vegan": false, "price": 4.24 },
-    { "id": 2, "name": "Onions - Spanish", "vegan": true, "price": 3.61 },
-    { "id": 3, "name": "Chicken", "vegan": false, "price": 4.23 },
-    { "id": 4, "name": "Cabbage - Nappa", "vegan": true, "price": 0.69 },
-    { "id": 5, "name": "Tomatoes", "vegan": true, "price": 1.53 },
-    { "id": 6, "name": "Pepperoni Slices", "vegan": false, "price": 0.97 },
-    { "id": 7, "name": "Eggs", "vegan": false, "price": 0.76 },
-    { "id": 8, "name": "Beef Tenderloin Aaa", "vegan": false, "price": 4.18 },
-    { "id": 9, "name": "Cranberries - Fresh", "vegan": true, "price": 0.54 },
-    { "id": 10, "name": "Pasta", "vegan": false, "price": 4.36 },
-    { "id": 11, "name": "Vegan pasta", "vegan": true, "price": 2.14 },
-    { "id": 12, "name": "Mashrooms", "vegan": true, "price": 1.94 },
-    { "id": 13, "name": "Shrimps", "vegan": false, "price": 4.73 },
-    { "id": 14, "name": "Vegetable oil", "vegan": true, "price": 4.86 },
-    { "id": 15, "name": "Pepper", "vegan": true, "price": 2.22 }
+    { "id": 1, "name": "Beef", "vegan": false, "price": 4.24, "spicey": false },
+    {
+      "id": 2,
+      "name": "Onions - Spanish",
+      "vegan": true,
+      "price": 3.61,
+      "spicey": false
+    },
+    {
+      "id": 3,
+      "name": "Chicken",
+      "vegan": false,
+      "price": 4.23,
+      "spicey": false
+    },
+    {
+      "id": 4,
+      "name": "Cabbage - Nappa",
+      "vegan": true,
+      "price": 0.69,
+      "spicey": false
+    },
+    {
+      "id": 5,
+      "name": "Tomatoes",
+      "vegan": true,
+      "price": 1.53,
+      "spicey": false
+    },
+    {
+      "id": 6,
+      "name": "Pepperoni Slices",
+      "vegan": false,
+      "price": 0.97,
+      "spicey": false
+    },
+    { "id": 7, "name": "Eggs", "vegan": false, "price": 0.76, "spicey": false },
+    {
+      "id": 8,
+      "name": "Beef Tenderloin Aaa",
+      "vegan": false,
+      "price": 4.18,
+      "spicey": false
+    },
+    {
+      "id": 9,
+      "name": "Cranberries - Fresh",
+      "vegan": true,
+      "price": 0.54,
+      "spicey": false
+    },
+    {
+      "id": 10,
+      "name": "Pasta",
+      "vegan": false,
+      "price": 4.36,
+      "spicey": false
+    },
+    {
+      "id": 11,
+      "name": "Vegan pasta",
+      "vegan": true,
+      "price": 2.14,
+      "spicey": false
+    },
+    {
+      "id": 12,
+      "name": "Mashrooms",
+      "vegan": true,
+      "price": 1.94,
+      "spicey": false
+    },
+    {
+      "id": 13,
+      "name": "Shrimps",
+      "vegan": false,
+      "price": 4.73,
+      "spicey": false
+    },
+    {
+      "id": 14,
+      "name": "Vegetable oil",
+      "vegan": true,
+      "price": 4.86,
+      "spicey": false
+    },
+    {
+      "id": 15,
+      "name": "Chilli pepper",
+      "vegan": true,
+      "price": 2.22,
+      "spicey": true
+    }
   ],
   "recipes": [
     {
@@ -23,10 +101,34 @@
       "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
       "difficult": 5,
       "ingredientList": [
-        { "id": 1, "name": "Beef", "vegan": false, "price": 4.24 },
-        { "id": 2, "name": "Onions - Spanish", "vegan": true, "price": 3.61 },
-        { "id": 5, "name": "Tomatoes", "vegan": true, "price": 1.53 },
-        { "id": 6, "name": "Pepperoni Slices", "vegan": false, "price": 0.97 }
+        {
+          "id": 2,
+          "name": "Onions - Spanish",
+          "vegan": true,
+          "price": 3.61,
+          "spicey": false
+        },
+        {
+          "id": 4,
+          "name": "Cabbage - Nappa",
+          "vegan": true,
+          "price": 0.69,
+          "spicey": false
+        },
+        {
+          "id": 5,
+          "name": "Tomatoes",
+          "vegan": true,
+          "price": 1.53,
+          "spicey": false
+        },
+        {
+          "id": 15,
+          "name": "Chilli pepper",
+          "vegan": true,
+          "price": 2.22,
+          "spicey": true
+        }
       ],
       "time": 70,
       "image": "https://images.unsplash.com/photo-1568625365131-079e026a927d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWVhbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
@@ -37,10 +139,34 @@
       "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
       "difficult": 3,
       "ingredientList": [
-        { "id": 3, "name": "Chicken", "vegan": false, "price": 4.23 },
-        { "id": 7, "name": "Eggs", "vegan": false, "price": 0.76 },
-        { "id": 10, "name": "Pasta", "vegan": false, "price": 4.36 },
-        { "id": 14, "name": "Vegetable oil", "vegan": true, "price": 4.86 }
+        {
+          "id": 3,
+          "name": "Chicken",
+          "vegan": false,
+          "price": 4.23,
+          "spicey": false
+        },
+        {
+          "id": 7,
+          "name": "Eggs",
+          "vegan": false,
+          "price": 0.76,
+          "spicey": false
+        },
+        {
+          "id": 10,
+          "name": "Pasta",
+          "vegan": false,
+          "price": 4.36,
+          "spicey": false
+        },
+        {
+          "id": 14,
+          "name": "Vegetable oil",
+          "vegan": true,
+          "price": 4.86,
+          "spicey": false
+        }
       ],
       "time": 40,
       "image": "https://images.unsplash.com/photo-1557038684-abb03178899e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWVhbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
@@ -51,10 +177,34 @@
       "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
       "difficult": 2,
       "ingredientList": [
-        { "id": 2, "name": "Onions - Spanish", "vegan": true, "price": 3.61 },
-        { "id": 4, "name": "Cabbage - Nappa", "vegan": true, "price": 0.69 },
-        { "id": 6, "name": "Pepperoni Slices", "vegan": false, "price": 0.97 },
-        { "id": 12, "name": "Mashrooms", "vegan": true, "price": 1.94 }
+        {
+          "id": 2,
+          "name": "Onions - Spanish",
+          "vegan": true,
+          "price": 3.61,
+          "spicey": false
+        },
+        {
+          "id": 4,
+          "name": "Cabbage - Nappa",
+          "vegan": true,
+          "price": 0.69,
+          "spicey": false
+        },
+        {
+          "id": 6,
+          "name": "Pepperoni Slices",
+          "vegan": false,
+          "price": 0.97,
+          "spicey": false
+        },
+        {
+          "id": 12,
+          "name": "Mashrooms",
+          "vegan": true,
+          "price": 1.94,
+          "spicey": false
+        }
       ],
       "time": 75,
       "image": "https://images.unsplash.com/photo-1560684352-8497838a2229?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVhbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
@@ -64,7 +214,22 @@
       "name": "Carbonated Water - White Grape",
       "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
       "difficult": 5,
-      "ingredientList": [],
+      "ingredientList": [
+        {
+          "id": 15,
+          "name": "Chilli pepper",
+          "vegan": true,
+          "price": 2.22,
+          "spicey": true
+        },
+        {
+          "id": 13,
+          "name": "Shrimps",
+          "vegan": false,
+          "price": 4.73,
+          "spicey": false
+        }
+      ],
       "time": 35,
       "image": "https://images.unsplash.com/photo-1597933593749-fba737c268c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVhbHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60"
     },
