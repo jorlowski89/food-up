@@ -1,15 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import {
-  catchError,
-  EMPTY,
-  filter,
-  map,
-  Observable,
-  shareReplay,
-  switchMap,
-  tap,
-} from 'rxjs';
+import { Component, OnInit } from '@angular/core';
 import { IRecipes } from 'src/app/model/recipes.model';
 import { RecipesService } from '../recipes.service';
 
@@ -24,11 +13,7 @@ export class RecipesComponent implements OnInit {
 
   recipes?: IRecipes[];
 
-  constructor(
-    private service: RecipesService,
-    private route: ActivatedRoute,
-    private router: Router
-  ) {}
+  constructor(private service: RecipesService) {}
 
   ngOnInit(): void {
     this.service.getRecipes().subscribe({
@@ -36,7 +21,7 @@ export class RecipesComponent implements OnInit {
         if (res.body) this.recipes = res.body;
       },
       error: () => {
-        this.message = 'Brak wyników';
+        this.message = 'Brak przepisów';
       },
     });
   }
